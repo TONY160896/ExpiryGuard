@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oled-bg: #f9fafb;
+  --color-oled-card: #ffffff;
+  --color-oled-border: #e5e7eb;
+  --color-expiry-red: #ef4444;     /* Red */
+  --color-expiry-amber: #f59e0b;   /* Amber / Orange */
+  --color-expiry-green: #10b981;   /* Emerald Green */
+  --color-brand-light: #0f172a;    /* Dark Slate for contrast */
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-oled-bg)] text-gray-900 antialiased selection:bg-black/10;
+  }
+}
